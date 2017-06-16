@@ -29,12 +29,21 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\..\build\Applications\Wpf\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Simprod.Common">
+      <HintPath>..\..\..\..\build\Core\Common\Simprod.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Simprod.Domain">
+      <HintPath>..\..\..\..\build\Core\Domain\Simprod.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Simprod.Service">
+      <HintPath>..\..\..\..\build\Core\Service\Simprod.Service.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
