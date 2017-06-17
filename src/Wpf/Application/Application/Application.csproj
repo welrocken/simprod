@@ -41,6 +41,9 @@
     <Reference Include="Simprod.Domain">
       <HintPath>..\..\..\..\build\Core\Domain\Simprod.Domain.dll</HintPath>
     </Reference>
+    <Reference Include="Simprod.Interface">
+      <HintPath>..\..\..\..\build\Core\Interface\Simprod.Interface.dll</HintPath>
+    </Reference>
     <Reference Include="Simprod.Service">
       <HintPath>..\..\..\..\build\Core\Service\Simprod.Service.dll</HintPath>
     </Reference>
