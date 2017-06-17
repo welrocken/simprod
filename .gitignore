@@ -259,3 +259,9 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/build/Core/Service/Simprod.Service.dll
+/build/Core/Service
+/build/Core/Domain/Simprod.Domain.dll
+/build/Core/Domain
+/build/Core/Common/Simprod.Common.dll
+/build/Core/Common/Simprod.Common.dll
