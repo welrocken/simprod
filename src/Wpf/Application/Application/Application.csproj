@@ -128,11 +128,5 @@
   <ItemGroup>
     <Resource Include="Images\Dakirby309-Simply-Styled-Microsoft-Visual-Studio.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mvvm\Mvvm.csproj">
-      <Project>{3a3362fd-cc8a-4530-a5a6-2b572bd3a7e6}</Project>
-      <Name>Mvvm</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
