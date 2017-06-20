@@ -19,9 +19,9 @@ namespace Simprod.Application.Controls
             if (Application == null)
                 return;
             
-            image.
-            image.Source = new BitmapImage(Application.ImageUri);
-            label.Content = Application.Name;
+            //image.
+            //image.Source = new BitmapImage(Application.ImageUri);
+            //label.Content = Application.Name;
         }
     }
 }

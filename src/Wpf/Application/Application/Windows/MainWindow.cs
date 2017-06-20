@@ -7,7 +7,7 @@ namespace Simprod.Application.Windows
     {
         public MainWindow()
         {
-            View = new Applications();
+            View = new Applications(null);
         }
     }
 }
