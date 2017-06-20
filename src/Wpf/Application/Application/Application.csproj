@@ -29,7 +29,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\..\build\Applications\Wpf\</OutputPath>
+    <OutputPath>..\..\..\..\build\Applications\Wpf\Application\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -71,6 +71,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\ApplicationShortcutControl.cs" />
+    <Compile Include="Controls\ModelControl.cs" />
+    <Compile Include="Controls\ShortcutControl.xaml.cs">
+      <DependentUpon>ShortcutControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Application.cs" />
+    <Compile Include="Mvvm\CollectionModifyEvent.cs" />
+    <Compile Include="Mvvm\IViewModel.cs" />
+    <Compile Include="UI\ViewWindow.xaml.cs">
+      <DependentUpon>ViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\IApplicationsViewModel.cs" />
+    <Compile Include="ViewModels\IApplicationViewModel.cs" />
+    <Compile Include="Views\Applications.designer.cs" />
+    <Compile Include="Views\Applications.cs" />
+    <Compile Include="Windows\MainWindow.cs" />
+    <Compile Include="UI\View.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -97,6 +114,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\ShortcutControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ViewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dakirby309-Simply-Styled-Microsoft-Visual-Studio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mvvm\Mvvm.csproj">
+      <Project>{3a3362fd-cc8a-4530-a5a6-2b572bd3a7e6}</Project>
+      <Name>Mvvm</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
